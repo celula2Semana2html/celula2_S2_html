@@ -1,0 +1,132 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #686666;
+    color: black;
+    padding: 8px;
+}
+
+/* FONDO */
+html {
+    background: linear-gradient(to bottom, #0f1310, #1a1a1f);
+}
+
+/* LAYOUT GENERAL */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* TÍTULO */
+h1 {
+    color: #43e9d8;
+    font-size: 2.6rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPCIÓN BAJO EL TÍTULO */
+main > p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* OCULTAR INPUTS */
+input[type="radio"] {
+    display: none;
+}
+
+/* BOTONES */
+.city-options {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.city-options label {
+    background: #262626;
+    padding: 14px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+/* ESTILO DEL BOTÓN ACTIVO */
+#Medellin:checked ~ .city-options label[for="Medellin"],
+#Bogota:checked   ~ .city-options label[for="Bogota"],
+#Cali:checked     ~ .city-options label[for="Cali"] {
+    background: #43e9d8;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #43e9d888;
+}
+
+/* CONTENEDOR */
+.weather-container {
+    margin-top: 25px;
+}
+
+/* CAJAS */
+.weather-box {
+    display: none;
+    margin: 0 auto 45px;
+    padding: 35px;
+    max-width: 500px;
+    background: #1a1a1f;
+    border-radius: 14px;
+    border: 2px solid #43e9d8;
+    box-shadow: 0 0 25px #43e9d85d;
+}
+
+.weather-box h2 {
+    color: #43e9d8;
+    margin-bottom: 18px;
+    font-size: 1.9rem;
+}
+
+.weather-box p {
+    margin-bottom: 14px;
+}
+
+/* IMÁGENES */
+.weather-box img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+/* MOSTRAR LA CAJA CORRECTA */
+#Medellin:checked ~ .weather-container #Medellin-box,
+#Bogota:checked   ~ .weather-container #Bogota-box,
+#Cali:checked     ~ .weather-container #Cali-box {
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+    color: #bbb;
+    border-top: 1px solid #444;
+}
