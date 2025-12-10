@@ -1,0 +1,97 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO BODY */
+body.weather-app {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f1310, #1a1a1f);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* TITULO */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #43e9d8;
+}
+
+/* TEXTO */
+p {
+    margin-bottom: 20px;
+}
+
+/* RADIOS INVISIBLES */
+input[type="radio"] {
+    display: none;
+}
+
+/* LABELS COMO BOTONES */
+.city-options label {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #555;
+    transition: all 0.2s ease;
+}
+
+/* ESTILO CUANDO ESTÁ SELECCIONADO */
+input[type="radio"]:checked + label {
+    background: #43e9d8;
+    color: #000;
+    border-color: #43e9d8;
+}
+
+/* WEATHER BOX */
+.weather-box {
+    display: none; /* Oculto por defecto */
+    margin: 10px auto 30px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: #1a1a1f;
+    border: 2px solid #43e9d8;
+    box-shadow: 0 0 15px #43e9d8;
+    text-align: center;
+}
+
+/* MOSTRAR SEGÚN RADIO SELECCIONADO */
+#Medellin:checked + label + #Medellin-box {
+    display: block;
+}
+#Bogota:checked + label + #Bogota-box {
+    display: block;
+}
+#Cali:checked + label + #Cali-box {
+    display: block;
+}
+
+/* IMAGENES DENTRO DE WEATHER BOX */
+.weather-box img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .city-options label {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    
+    .weather-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
