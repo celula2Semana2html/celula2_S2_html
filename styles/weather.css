@@ -1,97 +1,127 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ESTILO BODY */
-body.weather-app {
-    font-family: Arial, sans-serif;
+/* FONDO */
+html {
     background: linear-gradient(to bottom, #0f1310, #1a1a1f);
+}
+
+/* LAYOUT GENERAL */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
     color: white;
-    padding: 40px 20px;
     text-align: center;
 }
 
-/* TITULO */
-h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #43e9d8;
+/* CONTENIDO PRINCIPAL */
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-/* TEXTO */
-p {
+/* TÍTULO */
+h1 {
+    color: #43e9d8;
+    font-size: 2.6rem;
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
 }
 
-/* RADIOS INVISIBLES */
+/* DESCRIPCIÓN BAJO EL TÍTULO */
+main > p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* OCULTAR INPUTS */
 input[type="radio"] {
     display: none;
 }
 
-/* LABELS COMO BOTONES */
-.city-options label {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 5px 10px 5px;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 1px solid #555;
-    transition: all 0.2s ease;
+/* BOTONES */
+.city-options {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
 }
 
-/* ESTILO CUANDO ESTÁ SELECCIONADO */
-input[type="radio"]:checked + label {
+.city-options label {
+    background: #262626;
+    padding: 14px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+/* ESTILO DEL BOTÓN ACTIVO */
+#Medellin:checked ~ .city-options label[for="Medellin"],
+#Bogota:checked   ~ .city-options label[for="Bogota"],
+#Cali:checked     ~ .city-options label[for="Cali"] {
     background: #43e9d8;
     color: #000;
-    border-color: #43e9d8;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #43e9d888;
 }
 
-/* WEATHER BOX */
+/* CONTENEDOR */
+.weather-container {
+    margin-top: 25px;
+}
+
+/* CAJAS */
 .weather-box {
-    display: none; /* Oculto por defecto */
-    margin: 10px auto 30px auto;
-    padding: 20px;
-    max-width: 400px;
-    border-radius: 10px;
+    display: none;
+    margin: 0 auto 45px;
+    padding: 35px;
+    max-width: 500px;
     background: #1a1a1f;
+    border-radius: 14px;
     border: 2px solid #43e9d8;
-    box-shadow: 0 0 15px #43e9d8;
-    text-align: center;
+    box-shadow: 0 0 25px #43e9d85d;
 }
 
-/* MOSTRAR SEGÚN RADIO SELECCIONADO */
-#Medellin:checked + label + #Medellin-box {
-    display: block;
-}
-#Bogota:checked + label + #Bogota-box {
-    display: block;
-}
-#Cali:checked + label + #Cali-box {
-    display: block;
+.weather-box h2 {
+    color: #43e9d8;
+    margin-bottom: 18px;
+    font-size: 1.9rem;
 }
 
-/* IMAGENES DENTRO DE WEATHER BOX */
+.weather-box p {
+    margin-bottom: 14px;
+}
+
+/* IMÁGENES */
 .weather-box img {
     width: 100%;
-    max-width: 600px;
-    margin-top: 15px;
-    border-radius: 8px;
+    max-width: 480px;
+    border-radius: 10px;
+    margin-top: 22px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 500px) {
-    .city-options label {
-        display: block;
-        margin: 0 0 10px 0;
-    }
-    
-    .weather-box {
-        max-width: 100%;
-        padding: 15px;
-    }
+/* MOSTRAR LA CAJA CORRECTA */
+#Medellin:checked ~ .weather-container #Medellin-box,
+#Bogota:checked   ~ .weather-container #Bogota-box,
+#Cali:checked     ~ .weather-container #Cali-box {
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+    color: #bbb;
+    border-top: 1px solid #444;
 }

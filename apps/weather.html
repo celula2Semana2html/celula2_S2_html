@@ -8,42 +8,52 @@
 </head>
 <body class="weather-app">
     
-    <h1>Weather</h1>
-    <p>Selecciona una ciudad para ver el clima simulado.</p>
-   
-    <div class="city-options">
+    <main>
+        <h1>Weather</h1>
+        <p>Selecciona una ciudad para ver el clima simulado.</p>
 
-        <!-- Medellin -->
+        <!-- INPUTS (OCULTOS) -->
         <input type="radio" name="city" id="Medellin" checked>
-        <label for="Medellin">Medellin</label>
-        <div class="weather-box" id="Medellin-box">
-            <h2>Medellin</h2>
-            <p>Temperatura: 27°C</p>
-            <p>Estado: Soleado con nubes</p>
-            <img src="./imaganes/Niveles aire Medellin.png" alt="Medellin">
-        </div>
-
-        <!-- Bogota -->
         <input type="radio" name="city" id="Bogota">
-        <label for="Bogota">Bogota</label>
-        <div class="weather-box" id="Bogota-box">
-            <h2>Bogota</h2>
-            <p>Temperatura: 18°C</p>
-            <p>Estado: Lluvia ligera</p>
-            <img src="./imaganes/descarga.webp" alt="Bogota">
-        </div>
-
-        <!-- Cali -->
         <input type="radio" name="city" id="Cali">
-        <label for="Cali">Cali</label>
-        <div class="weather-box" id="Cali-box">
-            <h2>Cali</h2>
-            <p>Temperatura: 22°C</p>
-            <p>Estado: Nublado costero</p>
-            <img src="./imaganes/precipitacion_julio_2019.jpg" alt="Cali">
+
+        <!-- BOTONES -->
+        <div class="city-options">
+            <label for="Medellin">Medellín</label>
+            <label for="Bogota">Bogotá</label>
+            <label for="Cali">Cali</label>
         </div>
 
-    </div>
-    
+        <!-- CONTENEDOR DE RESULTADOS -->
+        <div class="weather-container">
+
+            <div class="weather-box" id="Medellin-box">
+                <h2>Medellín</h2>
+                <p>Temperatura: 27°C</p>
+                <p>Estado: Soleado con nubes</p>
+                <img src="./imaganes/Niveles aire Medellin.png" alt="Medellin">
+            </div>
+
+            <div class="weather-box" id="Bogota-box">
+                <h2>Bogotá</h2>
+                <p>Temperatura: 18°C</p>
+                <p>Estado: Lluvia ligera</p>
+                <img src="./imaganes/descarga.webp" alt="Bogota">
+            </div>
+
+            <div class="weather-box" id="Cali-box">
+                <h2>Cali</h2>
+                <p>Temperatura: 22°C</p>
+                <p>Estado: Nublado costero</p>
+                <img src="./imaganes/Mapa_temperatura_anual_valle_del_cauca.jpg" alt="Cali">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        © ACME. Todos los derechos reservados. Prohibida su reproducción sin autorización.
+    </footer>
+
 </body>
 </html>
