@@ -55,7 +55,7 @@ img:hover{
 .ubuntu{
     width: 80px;
     filter: brightness(9000);
-    padding-top: 37rem;
+    padding-top: 33rem;
 }
 
 button{
@@ -72,9 +72,8 @@ button{
     height: 80%;
     transform: translate(-50%, -50%);
     background: white;
-    border: 2px solid rgb(71, 21, 100);
-    border-radius: 2rem;
-    box-shadow: 0 2px 30px black;
+   
+    box-shadow: 0 2px 60px black;
 }
 
 
@@ -85,10 +84,10 @@ button{
 .close {
     position: absolute;
     right: 20px;
-    top: 10px;
+    
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: white;
     font-size: 2rem;
     
 }
@@ -97,4 +96,10 @@ button{
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.home{
+    border-radius: 0.5rem;
+    width: 55px;
+    margin-top: 3px;
 }
