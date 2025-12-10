@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../styles/weather.css">
+</head>
+<body class="weather-app">
+    <header>
+        <h4>Weather</h4>
+    </header>
+    
+    <main>
+        <h1>Weather</h1>
+        <p>Select a city to see the simulated weather.</p>
+
+        <!-- INPUTS (OCULTOS) -->
+        <input type="radio" name="city" id="Medellin" checked>
+        <input type="radio" name="city" id="Bogota">
+        <input type="radio" name="city" id="Cali">
+
+        <!-- BOTONES -->
+        <div class="city-options">
+            <label for="Medellin">Medellín</label>
+            <label for="Bogota">Bogotá</label>
+            <label for="Cali">Cali</label>
+        </div>
+
+        <!-- CONTENEDOR DE RESULTADOS -->
+        <div class="weather-container">
+
+            <div class="weather-box" id="Medellin-box">
+                <h2>Medellín</h2>
+                <p>Temperature: 27°C</p>
+                <p>Condition: Sunny with clouds</p>
+                <img src="./imaganes/Niveles aire Medellin.png" alt="Medellin">
+            </div>
+
+            <div class="weather-box" id="Bogota-box">
+                <h2>Bogotá</h2>
+                <p>Temperature: 18°C</p>
+                <p>Condition: Light rain</p>
+                <img src="./imaganes/descarga.webp" alt="Bogota">
+            </div>
+
+            <div class="weather-box" id="Cali-box">
+                <h2>Cali</h2>
+                <p>Temperature: 22°C</p>
+                <p>Condition: Coastal cloudy</p>
+                <img src="./imaganes/Mapa_temperatura_anual_valle_del_cauca.jpg" alt="Cali">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        © ACME. All rights reserved. Reproduction prohibited without authorization..
+    </footer>
+
+</body>
+</html>
