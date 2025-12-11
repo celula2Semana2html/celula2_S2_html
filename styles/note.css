@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #d9d9d9;
+}
+
+/*main container*/
+.app {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*Top bar*/
+.topbar {
+    background: #f3f3f3;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu span {
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu span:hover {
+    text-decoration: underline;
+}
+
+/*status bar*/
+.status {
+    background: #fff3cd;
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #7a5a00;
+}
+
+/*LAYOUT*/
+.layout {
+    display: flex;
+}
+
+/*file list*/
+.sidebar {
+    width: 180px;
+    background: #f7f7f7;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    padding-left: 18px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+/*main content*/
+.content {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+.title {
+    width: 100%;
+    font-size: 22px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.note {
+    width: 100%;
+    height: 430px;
+    border: none;
+    outline: none;
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+    resize: none;
+    padding: 10px;
+}
+
+.footer {
+    background: #f0f0f0;
+    padding: 10px;
+    font-size: 13px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #555;
+}
