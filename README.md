@@ -30,10 +30,6 @@ mini-os/
 └── README.md
 ```
 
-Imagen de referencia:
-
-<img width="1066" height="469" alt="image" src="https://github.com/user-attachments/assets/1ef4bcfe-41ff-445a-921f-2745d3d2d90b" />
-
 > **Nota:** En el `index.html` aparecen iconos y ventanas que cargan `iframe` apuntando a `apps/*.html`. Asegúrate de que los nombres de archivo dentro de `apps/` coincidan con los `src` de los `iframe`.
 
 ---
