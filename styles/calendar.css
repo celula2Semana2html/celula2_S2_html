@@ -1,95 +1,104 @@
-*{
+* {
     align-items: center;
     text-align: center;
 }
-h1{
+
+h1 {
     width: 600px auto;
-    background: linear-gradient(rgba(235, 187, 189, 0.521),rgba(207, 252, 203, 0.87)); 
-    border: 1px solid rgb(0, 0, 0);
+
+    background: linear-gradient(rgba(176, 196, 222, 0.8), rgba(0, 64, 128, 0.9)); 
+    border: 1px solid rgb(73, 80, 87);
     padding: 1rem;
     border-radius: 1000px;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(33, 37, 41);
 }
-h1:hover{
-   background: linear-gradient(rgba(207, 252, 203, 0.87),rgba(235, 187, 189, 0.521)); 
+
+h1:hover {
+    background: linear-gradient(rgba(0, 64, 128, 0.9), rgba(176, 196, 222, 0.8));
 }
+
 table {
     width: 20%;
     border-collapse: collapse;
-    color: #000000;
+    color: #212529;
     margin: 100px auto;
     align-items: center;
 }
 
 table th {
-    border: 1px solid rgb(0, 0, 0);
-    background: rgba(255, 3, 16, 0.3);
+    border: 1px solid rgb(73, 80, 87);
+    background: rgba(222, 226, 230, 0.9);
     padding: 12px;
-    border: 1px solid var();
+    border: 1px solid rgb(73, 80, 87); 
 }
 
 table td {
     padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(73, 80, 87);
     text-align: center;
 }
 
 table tr:hover {
-   background: linear-gradient(rgba(207, 252, 203, 0.87),rgba(235, 187, 189, 0.521)); 
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(211, 217, 222, 0.8));
 }
-body{
 
+body {
     margin: 0 auto;
     font-family: 'Times New Roman';
     padding: 0;
     box-sizing: border-box;
     font-weight: bold;
     line-height: 1.6;
-    background: linear-gradient(rgba(207, 252, 203, 0.87),rgba(235, 187, 189, 0.521)); 
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(255, 255, 255, 0.9)); 
 }
 
-section{
-    background: linear-gradient(rgba(207, 252, 203, 0.87),rgba(235, 187, 189, 0.521)); 
+section {
+    /* Gradiente de fondo formal */
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(255, 255, 255, 0.9)); 
 }
-.Month{
-    color: rgb(0, 0, 0);
+
+.Month {
+    color: rgb(33, 37, 41);
     font-size: 30px;
-    background: linear-gradient(rgba(235, 187, 189, 0.521),rgba(207, 252, 203, 0.87)); 
-    border: 1px solid rgb(0, 0, 0);
+    background: linear-gradient(rgba(176, 196, 222, 0.8), rgba(0, 64, 128, 0.9));
+    border: 1px solid rgb(73, 80, 87);
     padding: 1rem;
     border-radius: 1000px;
     cursor: pointer;
-    color: rgb(5, 5, 5);
+    color: rgb(33, 37, 41);
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.Month:hover{
-   background: linear-gradient(rgba(207, 252, 203, 0.87),rgba(235, 187, 189, 0.521)); 
+
+.Month:hover {
+    background: linear-gradient(rgba(0, 64, 128, 0.9), rgba(176, 196, 222, 0.8));
 }
 
-
-.Back{
+.Back {
     list-style: none;
     text-decoration: none;
     font-size: 15px;
-    color: rgb(34, 12, 85);
+    color: rgb(0, 64, 128);
     padding: 1rem;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(73, 80, 87);
     border-radius: 100px;
-    background-color: rgba(207, 252, 203, 0.87)
+    background-color: rgba(234, 239, 242, 0.8);
 }
-.Back:hover{
-    background-color: rgba(235, 187, 189, 0.521)
+
+.Back:hover {
+    background-color: rgba(176, 196, 222, 0.8); 
+    color: rgb(255, 255, 255); /
 }
-nav ul li a{
+
+nav ul li a {
     list-style: none;
     text-decoration: none;
 }
 
-.Inv-days{
-    color: rgb(187, 187, 183);
+.Inv-days {
+    color: rgb(170, 170, 170); 
 }
